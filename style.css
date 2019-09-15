@@ -1,0 +1,43 @@
+body {
+font-family: 'Noto Sans TC', sans-serif;
+
+}
+.caixa {
+	border-radius: 10px;
+
+}
+
+div > h2 {
+	padding: 40px 0px 20px 0px;
+}
+
+form, button {
+	overflow: hidden;
+	animation-name: mover;
+	animation-duration: 0.7s;
+}
+
+
+@keyframes mover {
+	from {
+		opacity: 0;
+		transform: translateX(-35%);
+	} to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.form-hide {
+animation: hide 500ms;
+animation-fill-mode: forwards;
+
+}
+
+@keyframes hide {
+	from {
+		transform: translateY(0);
+		} to {
+		transform: translateY(100vh);
+		}
+}
