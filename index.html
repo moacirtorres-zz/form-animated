@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário - feito por Moacir Torres</title>
+
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+<body class="bg-warning">
+     
+
+    <div  id="form" class="row justify-content-center mt-5">
+        <div class="caixa col-md-4 bg-dark">
+            <h2 class="text-center text-light">Entre no sistema</h2>
+        <form>
+            <label class="text-light font-weight-bold">Username:</label>
+            <input class="form-control" type="text" name="" placeholder="Digite seu username">
+            <br>
+            <label class="text-light font-weight-bold">Senha:</label>
+            <input class="form-control" type="password" name="" placeholder="Digite sua senha">
+        
+        <div class="d-flex justify-content-center mt-5 mb-5">
+        <button id="btn" type="submit" class="btn btn-outline-light btn-lg btn-block">Login</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    
+	
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        const btn = document.getElementById('btn')
+        const form = document.getElementById('form')
+
+
+        btn.addEventListener("click", event => {
+            event.preventDefault();
+            form.classList.add("form-hide")
+        })
+
+    </script>
+</body>
+</html>
